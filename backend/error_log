@@ -1,0 +1,22 @@
+[23-May-2020 03:25:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'talara' (111) in /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php:10
+Stack trace:
+#0 /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php(10): PDO->__construct('mysql:host=tala...', 'mahfud04_simple', 'Simple123', Array)
+#1 /home/mahfud04/simple-suppliers.com/backend/modelos/pedidos.modelo.php(151): Conexion::conectar()
+#2 /home/mahfud04/simple-suppliers.com/backend/controladores/pedidos.controlador.php(71): ModeloPedido::mdlListaProducto()
+#3 /home/mahfud04/simple-suppliers.com/backend/vistas/modulos/gestor.php(5): ControladorPedido::ctrListaProducto()
+#4 /home/mahfud04/simple-suppliers.com/backend/vistas/plantilla.php(164): include('/home/mahfud04/...')
+#5 /home/mahfud04/simple-suppliers.com/backend/controladores/plantilla.controlador.php(8): include('/home/mahfud04/...')
+#6 /home/mahfud04/simple-suppliers.com/backend/index.php(33): ControladorPlantilla->plantilla()
+#7 {main}
+  thrown in /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php on line 10
+[23-May-2020 03:26:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'talara' (111) in /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php:10
+Stack trace:
+#0 /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php(10): PDO->__construct('mysql:host=tala...', 'mahfud04_simple', 'Simple123', Array)
+#1 /home/mahfud04/simple-suppliers.com/backend/modelos/pedidos.modelo.php(19): Conexion::conectar()
+#2 /home/mahfud04/simple-suppliers.com/backend/controladores/pedidos.controlador.php(11): ModeloPedido::mdlMostrarPedido('2020-05-22')
+#3 /home/mahfud04/simple-suppliers.com/backend/vistas/modulos/inicio.php(57): ControladorPedido::ctrMostrarPedido('2020-05-22')
+#4 /home/mahfud04/simple-suppliers.com/backend/vistas/plantilla.php(164): include('/home/mahfud04/...')
+#5 /home/mahfud04/simple-suppliers.com/backend/controladores/plantilla.controlador.php(8): include('/home/mahfud04/...')
+#6 /home/mahfud04/simple-suppliers.com/backend/index.php(33): ControladorPlantilla->plantilla()
+#7 {main}
+  in /home/mahfud04/simple-suppliers.com/backend/modelos/conexion.php on line 10

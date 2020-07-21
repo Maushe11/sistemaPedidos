@@ -1,0 +1,38 @@
+.imgLogo{
+    padding:20px;
+    width: 15%;
+}
+
+.campo{
+    position: relative; 
+    margin:auto; 
+    width: 70%;
+    background: white; 
+    padding: 20px;
+}
+
+@media (max-width:1050px) and (min-width:770px){
+    .imgLogo {
+        padding: 7px;
+        width: 30%;
+    }
+}
+@media (max-width:769px) and (min-width:671px){
+	.imgLogo {
+        padding: 7px;
+        width: 30%;
+    }
+}
+@media (max-width:670px){
+	.imgLogo {
+        padding: 7px;
+        width: 40%;
+    }
+    .campo{
+        width: 100%;
+        padding: 10px;
+    }
+    .contenidoTabla{
+        overflow-x: scroll;
+    }
+}
